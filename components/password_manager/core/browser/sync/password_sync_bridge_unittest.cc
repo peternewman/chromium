@@ -1512,7 +1512,7 @@ TEST_F(PasswordSyncBridgeTest, ShouldNotifyOnSyncDisableIfProfileStore) {
 }
 
 TEST_F(PasswordSyncBridgeTest,
-       ShouldAddRemoteInsecureCredentilasUponRemoteCreation) {
+       ShouldAddRemoteInsecureCredentialsUponRemoteCreation) {
   ON_CALL(mock_processor(), IsTrackingMetadata()).WillByDefault(Return(true));
   const std::vector<InsecureType> kIssuesTypes = {InsecureType::kLeaked,
                                                   InsecureType::kWeak};
